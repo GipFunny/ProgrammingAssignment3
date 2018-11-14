@@ -1,6 +1,6 @@
-#Getting and Cleaning Data Final Assignment
+# Getting and Cleaning Data Final Assignment
 
-##Raw Data
+## Raw Data
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -8,7 +8,7 @@ Version 1.0
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-##Add Features
+## Add Features
 subject: 
 	one of 30 test subjects
 	

@@ -1,7 +1,7 @@
-#Getting and Cleaning Data Final Assignment Code Book
+# Getting and Cleaning Data Final Assignment Code Book
 
 
-##Features - Tidy
+## Features - Tidy
 subject: int
 	one of 30 test subjects
 	
@@ -42,7 +42,7 @@ z: num
 	z axis value
 
 	
-##Features - Summary
+## Features - Summary
 subject
 activity
 sensor
