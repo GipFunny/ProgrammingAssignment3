@@ -22,12 +22,12 @@ library(data.table)
 # Common data must be loaded first
 
 # Var names
-features        <- read.delim("assignment/data/features.txt", sep=' ', header=FALSE)
+features        <- read.delim("data/features.txt", sep=' ', header=FALSE)
 # Activity names
-activity_labels   <- read.delim("assignment/data/activity_labels.txt", sep=' ', header=FALSE)
+activity_labels   <- read.delim("data/activity_labels.txt", sep=' ', header=FALSE)
 # Subjects
-rawsubject_test <- read.fwf("assignment/data/test/subject_test.txt", widths=c(8))
-rawsubject_train <- read.fwf("assignment/data/train/subject_train.txt", widths=c(8))
+rawsubject_test <- read.fwf("data/test/subject_test.txt", widths=c(8))
+rawsubject_train <- read.fwf("data/train/subject_train.txt", widths=c(8))
 
 
 #########################################################################################
@@ -64,9 +64,9 @@ loadTidyXYZ <- function() {
     
     #------------------------------------------
     # Load the test and train data
-    xy_data_test <- loadXY("assignment/data/test/X_test.txt", "assignment/data/test/Y_test.txt", rawsubject_test)
+    xy_data_test <- loadXY("data/test/X_test.txt", "data/test/Y_test.txt", rawsubject_test)
     
-    xy_data_train <- loadXY("assignment/data/train/X_train.txt", "assignment/data/train/Y_train.txt", rawsubject_train)
+    xy_data_train <- loadXY("data/train/X_train.txt", "data/train/Y_train.txt", rawsubject_train)
     
     #------------------------------------------
     # Row bind into one set
@@ -122,4 +122,12 @@ summarizeXYZ <- function(xyz) {
         arrange(subject, activity, sensor, func)
 }
 
+#########################################################################################
+# Run and build the two datasets
+
+tidyXYZ <- loadTidyXYZ()
+write.csv(tidyXYZ, "tidyXYZ.csv", row.names = FALSE)
+
+summaryXYZ <- summarizeXYZ(tidyXYZ)
+write.csv(summaryXYZ, "summaryXYZ.csv", row.names = FALSE)
 
