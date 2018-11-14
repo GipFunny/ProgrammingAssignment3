@@ -2,53 +2,53 @@
 
 
 ## Features - Tidy
-subject: int
+subject: int<br/>
 	one of 30 test subjects
 	
-activity: character
-	walking
-	walking_upstairs
-	walking_downstairs
-	sitting
-	standing
+activity: character<br/>
+	walking<br/>
+	walking_upstairs<br/>
+	walking_downstairs<br/>
+	sitting<br/>
+	standing<br/>
 	laying
 
-readtype: character
-	time = time domain signals
+readtype: character<br/>
+	time = time domain signals<br/>
 	frequency = frequency domain signals
 
-motion: character
-	body = body acceleration
+motion: character<br/>
+	body = body acceleration<br/>
 	gravity = gravity acceleration
 	
-sensor: character
-	acc = raw source was accelerometer
+sensor: character<br/>
+	acc = raw source was accelerometer<br/>
 	gyro = raw source was gyroscope
 	
-jerk: logical
+jerk: logical<br/>
 	TRUE if a jerk was being measured
 	
-func: character
-	mean = raw data mean
+func: character<br/>
+	mean = raw data mean<br/>
 	std = raw data standard deviation
 
-x: num
+x: num<br/>
 	x axis value
 
-y: num
+y: num<br/>
 	y axis value
 
-z: num
+z: num<br/>
 	z axis value
 
 	
 ## Features - Summary
-subject
-activity
-sensor
-func
-x - summarized by mean()
-y - summarized by mean()
+subject<br/>
+activity<br/>
+sensor<br/>
+func<br/>
+x - summarized by mean()<br/>
+y - summarized by mean()<br/>
 z - summarized by mean()
 
 GROUPED BY: subject, activity, sensor, func

@@ -9,41 +9,41 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 
 ## Add Features
-subject: 
+subject: <br/>
 one of 30 test subjects
 	
-activity:
-walking
-walking_upstairs
-walking_downstairs
-sitting
-standing
+activity:<br/>
+walking<br/>
+walking_upstairs<br/>
+walking_downstairs<br/>
+sitting<br/>
+standing<br/>
 laying
 
-readtype:
-time = time domain signals
+readtype:<br/>
+time = time domain signals<br/>
 freq = frequency domain signals
 
-motion:
-body = body acceleration
+motion:<br/>
+body = body acceleration<br/>
 gravity = gravity acceleration
 	
-sensor:
-acc = accelerator
+sensor:<br/>
+acc = accelerator<br/>
 gyro
 	
-jerk:
+jerk:<br/>
 TRUE if a jerk was being measured
 	
-func:
+func:<br/>
 mean = raw data mean
 std = raw data standard deviation
 
-x:
+x:<br/>
 x axis value
 
-y:
+y:<br/>
 y axis value
 
-z:
+z:<br/>
 z axis value
