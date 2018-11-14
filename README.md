@@ -1,5 +1,12 @@
 # Getting and Cleaning Data Final Assignment
 
+## Files
+README.md - this file
+CodeBook.md - the code book for tidyXYZ and summaryXYZ
+run_analysis.R - script used to create tidyXYZ and summaryXYZ.
+tidyXYZ.csv - tidy data with headers
+summaryXYZ.csv - summary data with headers
+
 ## Raw Data
 
 Human Activity Recognition Using Smartphones Dataset
