@@ -1,10 +1,10 @@
 # Getting and Cleaning Data Final Assignment
 
 ## Files
-README.md - this file
-CodeBook.md - the code book for tidyXYZ and summaryXYZ
-run_analysis.R - script used to create tidyXYZ and summaryXYZ.
-tidyXYZ.csv - tidy data with headers
+README.md - this file<br/>
+CodeBook.md - the code book for tidyXYZ and summaryXYZ<br/>
+run_analysis.R - script used to create tidyXYZ and summaryXYZ.<br/>
+tidyXYZ.csv - tidy data with headers<br/>
 summaryXYZ.csv - summary data with headers
 
 ## Raw Data
